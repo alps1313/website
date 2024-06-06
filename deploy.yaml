@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: intellipaatsai/sampleproject2
+        image: alps1313/sampleproject2
         ports:
         - containerPort: 80
