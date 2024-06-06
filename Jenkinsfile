@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'K8Master-JSlave' }
     environment {
         DOCKERHUB_CREDENTIALS = credentials("ef00d982-7b93-437c-a91d-0901156d774c")
     }
