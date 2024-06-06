@@ -28,6 +28,8 @@ pipeline {
         }
         stage('K8s-Deployment-Service') {
             steps {
+                sh 'kubectl delete deploy nginx-deployment'
+                sh 'kubectl delete service my-service'
                 sh 'kubectl apply -f deploy.yaml'
                 sh 'kubectl apply -f service.yaml'
             }
