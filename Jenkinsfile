@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKERHUB_CREDENTIALS = credentials("dckr_pat_t_zlsfaK5ULdWLp5EQFXQ3Dw_7E")
+        DOCKERHUB_CREDENTIALS = credentials("callalps-dockerhub")
     }
     stages {
         stage('Hello') {
