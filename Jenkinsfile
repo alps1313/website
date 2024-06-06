@@ -19,9 +19,9 @@ pipeline {
         stage('Docker-Image-Push') {
             steps {
                 script {
-                    sh 'sudo docker build /home/ubuntu/jenkins/workspace/Pipeline/ -t alps1313/sampleproject2'
+                    sh 'sudo docker build /home/ubuntu/jenkins/workspace/Pipeline/ -t callalps/sampleproject2'
                     sh 'sudo docker login -u ${DOCKERHUB_CREDENTIALS_USR} -p ${DOCKERHUB_CREDENTIALS_PSW}'
-                    sh 'sudo docker push alps1313/sampleproject2'
+                    sh 'sudo docker push callalps/sampleproject2'
                 }
             }
         }
