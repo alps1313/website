@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: alps1313/sampleproject2
+        image: callalps/sampleproject2
         ports:
         - containerPort: 80
